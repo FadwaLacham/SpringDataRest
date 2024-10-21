@@ -1,5 +1,6 @@
 package com.ensias.springdatarest.modele;
 
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -39,4 +40,11 @@ public class Voiture {
     @NonNull
     @JsonIgnore
     private Proprietaire proprietaire;
+
+    public Voiture(String miolaCar, String uber, String blanche, String s, int i, int i1) {
+
+    }
+
+    // New constructor to include Proprietaire
+
 }
