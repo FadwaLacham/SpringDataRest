@@ -3,7 +3,8 @@ import { Button, ButtonGroup, Card, Table } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEdit, faList, faTrash } from "@fortawesome/free-solid-svg-icons";
 import axios from 'axios';
-import MyToast from './myToast'; // Assurez-vous que cela correspond à votre nom de fichier (sensible à la casse)
+import MyToast from './myToast';
+import {Link} from "react-router-dom"; // Assurez-vous que cela correspond à votre nom de fichier (sensible à la casse)
 
 export default class VoitureListe extends Component {
     constructor(props) {
@@ -98,9 +99,9 @@ export default class VoitureListe extends Component {
                                         <td>{voiture.prix}</td>
                                         <td>
                                             <ButtonGroup>
-                                                <Button size="sm" variant="outline-primary">
+                                                <Link to={"edit/"+voiture.id} className="btn btn-sm btn-outline-primary">
                                                     <FontAwesomeIcon icon={faEdit} />
-                                                </Button>
+                                                </Link>{' '}
                                                 <Button size="sm" variant="outline-danger" onClick={() => this.deleteVoiture(voiture.id)}>
                                                     <FontAwesomeIcon icon={faTrash} />
                                                 </Button>
