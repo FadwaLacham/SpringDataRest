@@ -38,7 +38,7 @@ class App extends Component {
                                 <Routes>
                                     <Route path="/" element={<Bienvenue />} />
                                     <Route path="/add" element={<Voiture />} />
-                                    <Route path="/edit/:id" exact component={Voiture}/>
+                                    <Route path="/edit/:id" exact component={Voiture}/>o
                                     <Route path="/list" element={<VoitureListe />} />
                                 </Routes>
                             </Col>
