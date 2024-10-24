@@ -1,10 +1,10 @@
 # 🚗 SpringDataRest application
 
- SpringDataRest is a full-stack web application for managing car-related services, built with *Spring Boot* for the backend and *ReactJS* for the frontend. The application is containerized using *Docker, and the services are orchestrated via **Docker Compose*.
+ SpringDataRest is a full-stack web application for managing car-related services, built with *Spring Boot* for the backend and *ReactJS* for the frontend. The application is containerized using *Docker*, and the services are orchestrated via **Docker Compose**.
 
 ## 🏗 Project Architecture
 
-The CarsApp project follows a microservices architecture consisting of the following components:
+The SpringDataRest project consists of the following components:
 
 - *Backend*: Spring Boot service handling the business logic and data access.
 - *Frontend*: ReactJS application providing an intuitive user interface for interacting with the car services.
